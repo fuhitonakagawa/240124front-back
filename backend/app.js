@@ -13,7 +13,7 @@ import multer from "multer";
 const app = express();
 const upload = multer({ storage: multer.memoryStorage() });
 
-const AWS_REGION = "eu-west-3";
+const AWS_REGION = "ap-northeast-1";
 const s3Client = new S3Client({ region: AWS_REGION });
 
 app.use(cors());
