@@ -44,7 +44,7 @@ export default {
     async fetchBuckets() {
       try {
         const response = await axios.get(
-          "${process.env.VUE_APP_API_URL}/storage/buckets"
+          `${process.env.VUE_APP_API_URL}/storage/buckets`
         );
         this.buckets = response.data;
       } catch (error) {
